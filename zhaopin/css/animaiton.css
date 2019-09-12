@@ -1,0 +1,111 @@
+
+/*(from/to)top bottom right left ---->entrance animation*/
+.move-from-top{   animation:mft 0.6s ease 1 both;}
+.move-from-bottom{animation:mfb 0.6s ease 1 both;}
+.move-from-right{ animation:mfr 0.6s ease 1 both;}
+.move-from-left{  animation:mfl 0.6s ease 1 both;}
+.move-to-top{   animation:mtt 0.6s ease 1 both;}
+.move-to-bottom{animation:mtb 0.6s ease 1 both;}
+.move-to-right{ animation:mtr 0.6s ease 1 both;}
+.move-to-left{  animation:mtl 0.6s ease 1 both;}
+
+@keyframes mft {
+    from{transform: translateY(-100%);opacity:0.3}
+    to{opacity:1}
+}
+@keyframes mfb {
+    from{transform: translateY(100%);}
+    to{}
+}
+@keyframes mfr {
+    from{transform: translateX(100%);}
+    to{}
+}
+@keyframes mfl {
+    from{transform: translateX(-100%);}
+    to{}
+}
+
+
+@keyframes mtt {
+    from{}
+    to{transform: translateY(-100%);}
+}
+@keyframes mtb {
+    from{}
+    to{transform: translateY(100%);}
+}
+@keyframes mtr {
+    from{}
+    to{transform: translateX(100%);}
+}
+@keyframes mtl {
+    from{}
+    to{transform: translateX(-100%);}
+}
+
+/*icon-animation*/
+.img_icon{animation:btn 1s ease 0.5s infinite both;}
+@keyframes btn {
+    from{transform: translateY(100%); opacity:0}
+    50%{opacity: 1}
+    to{transform: translateY(-100%); opacity:0}
+}
+
+/*scaleUp*/
+.scaleUp{animation:scaleUp 0.6s ease 1 both;}
+@keyframes scaleUp {
+    from{transform:scale(.3);}
+    to{}
+}
+
+/*Bouncy Ball*/
+.bouncyBall{animation:bouncyBall 1.5s ease 1 both;}
+@keyframes bouncyBall {
+    0% { transform: translateY(-80%);opacity:0.1;
+        }
+    5% {transform: translateY(-80%);opacity:0.3;}
+    35% {
+        transform: translateY(10%);opacity:1;}
+    60% {transform: translateY(-13%);}
+    65% {transform: translateY(-13%);}
+    100% {transform: translateY(0%);}
+}
+
+/*overTurn*/
+.overTurn{
+    animation:overTurn 1.6s ease 1 both;
+    transform-origin: center center;
+}
+@keyframes overTurn {
+    from {transform: translateZ(-300px) rotateY(-90deg); opacity: 0.2; }
+}
+.overTurn-R{
+    
+    animation:overTurn-R .6s ease 1 both;
+    transform-origin: center center;
+}
+@keyframes overTurn-R {
+    from {transform: translateZ(300px) rotateY(90deg); opacity: 0.2; }
+}
+
+/*page5 anmiation*/
+.p5Ani{
+    
+    animation:p5Ani 0.6s ease-in 1 both;
+    transform-origin:50% 0%;
+}
+@keyframes p5Ani {
+    0% { opacity: .1;transform: rotateX(-90deg) ; }
+
+}
+.p5Ani-R{
+    
+    animation:p5Ani-R .6s ease-in 1 both;
+    transform-origin:50% 100%;
+}
+@keyframes p5Ani-R {
+    0% { opacity: .3;transform: rotateX(90deg) }
+    100% { opacity:1;transform: rotateX(0deg) }
+
+}

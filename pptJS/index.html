@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./reveal.js-master/css/reveal.css">
+    <link rel="stylesheet" href="./reveal.js-master/css/theme/black.css">
+    <link rel="stylesheet" href="./reveal.js-master/lib/css/zenburn.css">
+
+    <script src="./reveal.js-master/js/reveal.js"></script>
+    <script src="./reveal.js-master/plugin/markdown/marked.js"></script>
+    <script src="./reveal.js-master/plugin/markdown/markdown.js"></script>
+
+    <link rel="stylesheet" href="./highlight/styles/default.css">
+    <script src="./highlight/highlight.pack.js"></script>
+
+    <script src="./jquery-3.3.1.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./star/star.css">
+
+
+
+    <style>
+        .left {
+            /*left:-8.33%;*/
+            text-align: left;
+            float: left;
+            width:48%;
+            z-index:-10;
+            /*border:1px solid #fff;*/
+            /*box-sizing: border-box;*/
+        }
+
+        .right {
+            /*left:31.25%;*/
+            top: 75px;
+            float: right;
+            text-align: right;
+            z-index:-10;
+            width:48%;
+            /*border:1px solid #fff;*/
+            /*box-sizing: border-box;*/
+        }
+        .xulun{
+            font-size:25px;
+        }
+
+        pre{
+            width:100% !important;
+        }
+        .hljs-comment {
+          /*color: #888888;*/
+           color:hotpink;
+        }
+        .resultImg{
+            width:80%;
+        }
+    </style>
+</head>
+<body>
+<canvas width="3000px" height="3000px"></canvas>
+<script async="" src="https://ssl.google-analytics.com/ga.js"></script>
+<script src="./star/star.js"></script>
+<script>
+    var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.async = true;
+        g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s);
+    })(document, 'script');
+</script>
+<div class="reveal">
+    <!-- 所有的幻灯片都放在一个类为slides的div中 -->
+    <div class="slides">
+
+
+<!--       PAGE1 表紙-->
+        <section>
+
+
+
+            <!-- ppt标题 -->
+            <h1 class="fragment">AJAXとウェブページの読み込み時間</h1>
+            <!-- ppt正文 -->
+            <p class="fragment">
+                <small>Presented by <a href=""> 2年1組19番　裴宏博</a></small>
+            </p>
+        </section>
+
+<!--       PAGE2 従来-->
+        <section >
+            <section>
+                <h2 ><a>序論</a></h2>
+                <div  class="fragment left">
+                <span class="xulun"> 従来のwebアプリケーションでは、フォーム(form)をユーザが作成
+                することが可能であり、フォームの提出時にweb サーバへ一つの要求を
+                送信する。サーバーは, 送信されてくるフォームを受信して処理し, 新し
+                いwebページに戻る。
+                </span>
+                </div>
+                <div  class="fragment right">
+                <span class="xulun">この手法は、通常、前後の2 つのページにおいて
+                HTML コードの大部分が同じであるため、多くの帯域幅を浪費する。ア
+                プリケーションの応答時間は、アプリケーションのやりとり毎に要求を
+                サーバに送信する必要があるため、サーバの応答時間に依存する。
+                </span>
+                </div>
+            </section>
+            <section data-background="#dddddd">
+                <div class="fragment left">
+                    <img src="11.png" alt="xxx">
+                </div>
+                <div class="fragment left">
+                    <img src="22.png" alt="ooo">
+                </div>
+            </section>
+            <section>
+                <h1><a>課題</a></h1>
+                <p>
+                    実際AJAX がウェブページのローディングの速度にどの
+                    ぐらい影響するのかを明らかにする
+                </p>
+            </section>
+        </section>
+
+<!--       PAGE3　実験方法　-->
+        <section >
+            <div data-markdown>
+             <textarea data-template>
+            実験方法
+            ```html
+                <script>
+                     console.log(Date.now());
+                </script>
+
+                <body>
+                <!--一部の写真データ-->
+                </body>
+
+                <script>
+                     console.log(Date.now());
+                </script>
+            ```
+                </textarea>
+            </div>
+
+            <div data-markdown class="fragment">
+               <textarea data-template>
+             写真100 | rendering | download | AJAX | SUM(s) |
+            :-:  | :-: | :-: | :-: | :-:|
+            非AJAX  | 0.187 | 4.125 | / | 4.312|
+            AJAX  | 0.002 | 0.04 | 0.754 | 0.797|
+                </textarea>
+            </div>
+
+
+
+
+
+
+        </section>
+
+<!--       PAGE3　解析•結果　-->
+        <section >
+            <h2><a>解析•結果</a></h2>
+            <img src="3.png" alt="xxx" class="fragment fade-in-then-out resultImg" >
+        </section>
+
+<!--       PAGE　結論　-->
+        <section data-background="rgb(77,126,101)">
+            <h2><a>結論</a></h2>
+            <p class="fragment fade-in-then-out">リフレッシュ無しで、データを更新する</p>
+            <P class="fragment fade-in-then-out">サーバと非同期通信する</P>
+            <p class="fragment fade-in-then-out">front-endとback-end負担のバランス</p>
+            <p class="fragment fade-in-then-out">UIとApplication分離</p>
+        </section>
+
+<!--       PAGE　今後課題-->
+        <section data-background="#b5533c">
+            <h2><a>今後の課題</a></h2>
+            <p class="fragment fade-in-then-semi-out">AJAXの安全問題</p>
+            <P class="fragment fade-in-then-semi-out">ブラウザの履歴を破壊した</P>
+            <p class="fragment fade-in-then-semi-out">検索エンジンへのサポートが足りない</p>
+            <p class="fragment fade-in-then-semi-out">……</p>
+        </section>
+
+
+
+        <section>
+           <h1>FINISH</h1>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>
+<script>
+    Reveal.initialize({
+        transition: 'convex',
+    });
+    Reveal.configure({ backgroundTransition: 'zoom' })
+    setTimeout(function () {
+        $('.hljs-comment').click(function () {
+            $(this).text('<!--全ての写真データ-->');
+            $(this).css('color','aqua');
+        })
+    },1000)
+
+
+</script>

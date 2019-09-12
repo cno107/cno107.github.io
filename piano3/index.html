@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<!--    <script src="dist/main.js" data-description="webpackを使った"></script>-->
+</head>
+<body>
+
+<div class="bg"></div>
+
+<!-- Button trigger modal -->
+<span class="glyphicon glyphicon-globe myModal" data-toggle="modal" data-target="#myModal" style="font-size: 30px;margin:20px;color:yellow;position:absolute;z-index: 2"></span>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">How to use</h2>
+            </div>
+            <div class="modal-body">
+                <div>1. <b>[style Btn]</b> to change wave's shape</div>
+                <div>2. <b>[song Btn]</b> to choose music</div>
+                <div>3. <b>[speed progress]</b> to change music's speed</div>
+                <div>4. <b>[stop Btn]</b> to reset current music</div>
+                -------------------------------------------------------
+                <div>5. <b>[sample Btn]</b> will give you a example </div>
+                <div>6. <b>[Mode Btn]</b> R-Mode : right-hand melody / L-Mode : left-hand melody </div>
+                <div>7. <b>[Encode Btn]</b> to play your music</div>
+                ---------------------------------------------------------
+                <div>?. <b>[write music]</b></div>
+                <pre>c d e f g a b ----> do re mi fa sol ra si -8*2  (!1-7)
+1 2 3 4 5 6 7 ----> do re mi fa sol ra si  -8  (@1-7)
+C D E F G A B ----> 中央C (#1-7)
+一 二 三 四 五 六 七--> do re mi fa sol ra si  +8  (1$-7)
+------------------------------------------------------------------------
+ '0': 休止符
+ '-': 八分音符
+ '=': 十六分音符时值
+ '!': 32分音符时
+ '^': 四分音符时值
+ '?': 12分音符时值 用于三连音 把一个四分音符分成仨
+ '*': 24分音符时值 用于三连音 把一个8分音符分成仨
+                </pre>
+
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script name="my modal">
+    $('#myModal').modal('show');
+    $('.myModal').click(function () {
+       $('#myModal').modal('hide');
+   });
+</script>
+
+
+
+<div class="box leftHand clearfix" id="poi"></div>
+<div class="box rightHand clearfix"></div>
+
+<div class="setL">
+<div id="songStyle">
+    <label>Style：</label>
+     <label class="radio-inline">
+         <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="sine" checked> sine
+     </label>
+     <label class="radio-inline">
+         <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="square"> square
+     </label>
+     <label class="radio-inline">
+         <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="triangle"> triangle
+     </label>
+     <label class="radio-inline">
+         <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="sawtooth"> sawtooth
+     </label>
+ </div>
+<div id="song">
+    <label>Song：</label>
+<!--          class 必须和 value 一致-->
+        <button class="btn btn-primary songBtn Lemon"         value="Lemon">Lemon</button>
+        <button class="btn btn-primary songBtn dreamWedding"  value="dreamWedding">dreamWedding</button>
+        <button class="btn btn-primary songBtn sakura"        value="sakura" >千本桜</button>
+        <button class="btn btn-danger  songBtn sakuraLR"      value="sakuraLR">test</button>
+    </div>
+ <div id="speed" class="clearfix" >
+   <label>Speed：</label>
+     <input id="speedControl" class="" type="range" min="60" max="220" step="1" >
+    <span id="speedValue">170</span><span>BPM</span>
+ </div>
+    <div id="stop" class="" >
+        <label>Stop：</label>
+        <button class="btn btn-warning stopBtn">Stop Music</button>
+    </div>
+</div>
+<div class="setR" >
+    <button class="btn btn-success encode"  >Encode</button>
+<!--    <button class="btn btn-primary clear"  >Clear</button>-->
+    <button class="btn btn-primary mode"  >R-Mode</button>
+    <button class="btn btn-primary sample"  >Sample</button>
+    <textarea class="DIYmusicR" ></textarea>
+    <textarea class="DIYmusicL" hidden ></textarea>
+</div>
+
+
+
+<script src="js/createVoice.js"></script>
+<script src="js/setBind.js"></script>
+<script src="js/RightBox.js"></script>
+</body>
+</html>

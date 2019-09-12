@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 700px;
+  min-width: 1200px;
+  position: relative;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  z-index: -10;
+  zoom: 1;
+  background: url("./bgzz.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+  filter: blur(9px);
+}
+ul,
+li {
+  float: left;
+  list-style: none;
+}
+.box {
+  overflow: auto;
+  min-width: 1200px;
+  width: 798px;
+  height: 200px;
+}
+.box.leftHand {
+  position: absolute;
+  width: 80%;
+  top: 55%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  transform-origin: center center;
+  transform: rotate(-15deg);
+}
+.box.leftHand ul {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 798px;
+  height: 191px;
+}
+.box.leftHand ul li {
+  width: 55px;
+  height: 100%;
+  min-height: 105px;
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3), inset 0 -3px 5px rgba(0, 0, 0, 0.1);
+}
+.box.rightHand {
+  overflow: auto;
+  top: 5%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.box.rightHand ul {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 798px;
+  height: 191px;
+}
+.box.rightHand ul li {
+  width: 55px;
+  height: 100%;
+  min-height: 105px;
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3), inset 0 -3px 5px rgba(0, 0, 0, 0.1);
+}
+.box li {
+  border-radius: 5px;
+  position: relative;
+  margin: 0 1px;
+}
+.box li .iCss {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 5%;
+  font-size: 18px;
+}
+.setL {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  margin: auto;
+}
+.setL div {
+  margin-top: 20px;
+}
+.setL label {
+  color: lightcoral;
+  font-size: 20px;
+}
+.setL span {
+  color: lightcoral;
+}
+.setL button {
+  margin-left: 20px;
+}
+.setL #song {
+  min-width: 1000px;
+}
+.setL #speed {
+  font-size: 20px;
+}
+.setL #speed label {
+  float: left;
+}
+.setL #speed input {
+  width: 150px;
+  float: left;
+  margin-top: 10px;
+  height: 8px;
+  border-radius: 4px;
+  outline: none;
+}
+.setL #speed #speedValue {
+  margin-left: 10px;
+}
+.setR {
+  width: 25%;
+  height: 18%;
+  right: 5%;
+  bottom: 8%;
+  position: absolute;
+}
+.setR textarea {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3), inset 0 -3px 5px rgba(0, 0, 0, 0.1);
+}
+.setR button {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=main.css.map */

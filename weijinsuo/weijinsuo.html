@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="bootsrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="bootsrap/js/html5shiv.js"></script>
+    <script src="bootsrap/js/respond.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/wjs_index.css">
+
+</head>
+<body>
+<!--top-->
+<header class="hidden-sm hidden-xs">
+    <div class="container">
+        <div class="col-lg-2 col-md-2">
+            <a class='app' href="javascript:;">
+                <span class="glyphicon glyphicon-phone"></span>
+                <span>smartPhone</span>
+                <span class="glyphicon glyphicon-menu-down"></span>
+                <div class="code2"></div>
+            </a>
+        </div>
+        <div class="col-lg-5 col-md-5">
+            <span class="glyphicon glyphicon-send"></span>
+            <span> 123-4567-8910(営業時間: 9:00-17:00)</span>
+        </div>
+        <div class="col-lg-2 col-md-2">
+           <a href="javascript:;"><span>Question&Answer</span></a>
+        </div>
+        <div class="col-lg-3 col-md-3">
+            <a href="javascript:;"><button type="button" class="btn btn-danger btn-xs btn-annai">無料案内</button></a>
+            <a href="javascript:;"><button type="button" class="btn btn-link">ログイン</button></a>
+        </div>
+    </div>
+</header>
+<!--navition data-spy="affix" data-offset-top="0" js-->
+<nav class="navbar navbar-default wjs_nav "   >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-globe globe"></span>
+                <span>~~~</span>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#" data-target="#carousel-example-generic1" data-slide-to="0">BBBBB</a></li>
+                <li><a href="#" data-target="#carousel-example-generic1" data-slide-to="1">CC</a></li>
+                <li><a href="#" data-target="#carousel-example-generic1" data-slide-to="2">DDDD</a></li>
+                <li><a href="#" data-target="#carousel-example-generic1" data-slide-to="3">Sumary</a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden-sm"><a href="#">Center</a></li>
+                <li class="dropdown">
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--carousel-->
+<div class="banner">
+    <div id="carousel-example-generic1" class="carousel slide " data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <!--動態render btn &#45;&#45;---js-->
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" >
+            <!--動態render img &#45;&#45;---js-->
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic1"  data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+        </a>
+    </div>
+
+
+</div>
+<!--infomation-->
+<div class="info hidden-xs">
+    <div class="container">
+        <div class=" col-md-4 col-ms-6 hidden-xs">
+            <a class="media">
+            <div class="media-left">
+                <span class="glyphicon glyphicon-fire" ></span>
+            </div>
+            <span class="media-body">
+                <h4 class="media-heading">あああ</h4>
+               内容どうでもいいああああ
+            </span>
+        </a>
+        </div>
+        <div class="col-md-4 col-ms-6 hidden-xs">
+            <a class="media">
+                <div class="media-left">
+                    <span class="glyphicon glyphicon-leaf" ></span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">あああ</h4>
+                    ああああああああああああ
+                </div>
+            </a>
+        </div>
+        <div class=" col-md-4 col-ms-6 hidden-xs">
+            <a class="media">
+                <div class="media-left">
+                    <span class="glyphicon glyphicon-bell" ></span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">あああ</h4>
+                    ああああああああああああ
+                </div>
+            </a>
+        </div>
+        <div class=" col-md-4 col-ms-6 hidden-xs">
+            <a class="media">
+                <div class="media-left">
+                    <span class="glyphicon glyphicon-comment" ></span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">あああ</h4>
+                    ああああああああああああ
+                </div>
+            </a>
+        </div>
+        <div class=" col-md-4 col-ms-6 hidden-xs">
+            <a class="media">
+                <div class="media-left">
+                    <span class="glyphicon glyphicon-globe" ></span>
+                </div>
+                <span class="media-body">
+                    <h4 class="media-heading">あああ</h4>
+                    ああああああああああああ
+                </span>
+            </a>
+        </div>
+        <div class=" col-md-4 col-ms-6 hidden-xs">
+            <a class="media">
+                <div class="media-left">
+                    <span class="glyphicon glyphicon-phone-alt" ></span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">あああ</h4>
+                    ああああああああああああ
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+<!--book-->
+<div class="book">
+    <div class="container">
+        <div class="pull-left">
+            <span class="glyphicon glyphicon-knight"></span>
+            <span class="hidden-xs">現在256人が並んでる、予約取引成功4621回。詳しいこと？</span>
+            <a class="yoyaku" href="javascript:;">今すぐ予約</a>
+        </div>
+        <div class="pull-right hidden-xs hidden-sm">
+            <span class="glyphicon glyphicon-film"></span>
+            <a href="javascript:;">宣伝ビデオ</a>
+        </div>
+    </div>
+</div>
+<!--product-->
+<div class="product">
+    <div class="container">
+
+        <!-- Nav tabs -->
+        <div class="iscroll">
+        <ul class="nav nav-tabs " >
+            <li  class="active"><a href="#t1"   data-toggle="tab">内容</a></li>
+            <li ><a href="#t2"   data-toggle="tab">考える</a></li>
+            <li ><a href="#t3"   data-toggle="tab">まじ</a></li>
+            <li ><a href="#t4"   data-toggle="tab">面倒臭い</a></li>
+            <li ><a href="#t5"   data-toggle="tab">あああ</a></li>
+            <li ><a href="#t6"   data-toggle="tab">いいい</a></li>
+        </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div  class="tab-pane active " id="t1">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap active">
+                    <div class="yhj_mid"></div>
+                    <div class="yhj_right">
+                        <p class="per8"><b>8</b><sub>%</sub></p>
+                        <p>年利率</p>
+                    </div>
+                    <div class="yhj_left">
+                        <h3 class="yhj_tit">クーボン107期</h3>
+                        <div class="yhj_con clearfix">
+                            <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                            <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                        </div>
+                        <div class="yhj_con clearfix">
+                            <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                            <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                        </div>
+                    </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap ">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+                            <div class="icon">
+
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="東京都">東</span>
+                                <span class="green" data-toggle="tooltip" data-placement="right" title="埼玉県">埼</span>
+                            </div>
+                            <p class="per8"><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap ">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+                            <div class="icon">
+
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="東京都">東</span>
+                                <span class="green" data-toggle="tooltip" data-placement="right" title="埼玉県">埼</span>
+                            </div>
+                            <p class="per8"><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap ">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+                            <div class="icon">
+
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="東京都">東</span>
+                                <span class="green" data-toggle="tooltip" data-placement="right" title="埼玉県">埼</span>
+                            </div>
+                            <p class="per8"><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+                            <div class="icon">
+
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="東京都">東</span>
+                                <span class="green" data-toggle="tooltip" data-placement="right" title="埼玉県">埼</span>
+                            </div>
+                            <p class="per8"><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+            </div>
+            <div  class="tab-pane" id="t2">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap ">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+                            <div class="icon">
+
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="東京都">東</span>
+                                <span class="green" data-toggle="tooltip" data-placement="right" title="埼玉県">埼</span>
+                            </div>
+                            <p class="per8"><b>?</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap active">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+
+                            <p class="per8"><b>?</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+            </div>
+            <div  class="tab-pane" id="t3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap ">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+                            <div class="icon">
+
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="東京都">東</span>
+                                <span class="green" data-toggle="tooltip" data-placement="right" title="埼玉県">埼</span>
+                            </div>
+                            <p class="per8"><b>7</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap ">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+                            <div class="icon">
+
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="東京都">東</span>
+                                <span class="green" data-toggle="tooltip" data-placement="right" title="埼玉県">埼</span>
+                            </div>
+                            <p class="per8"><b>7</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap active">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+
+                            <p class="per8"><b>7</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+            </div>
+            <div  class="tab-pane" id="t4">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap active">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+
+                            <p class="per8"><b>6</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap ">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+                            <div class="icon">
+
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="東京都">東</span>
+                                <span class="green" data-toggle="tooltip" data-placement="right" title="埼玉県">埼</span>
+                            </div>
+                            <p class="per8"><b>6</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap ">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+                            <div class="icon">
+
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="東京都">東</span>
+                                <span class="green" data-toggle="tooltip" data-placement="right" title="埼玉県">埼</span>
+                            </div>
+                            <p class="per8"><b>6</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap active ">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+
+                            <p class="per8"><b>6</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+            </div>
+            <div  class="tab-pane" id="t5">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap ">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+
+                            <p class="per8"><b>1</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+            </div>
+            <div  class="tab-pane" id="t6">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap active">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+
+                            <p class="per8"><b>9</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap active">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+
+                            <p class="per8"><b>9</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                <a class="yhj_wrap active">
+                    <div class="yhj_mid"></div>
+                    <div class="yhj_right">
+
+                        <p class="per8"><b>9</b><sub>%</sub></p>
+                        <p>年利率</p>
+                    </div>
+                    <div class="yhj_left">
+                        <h3 class="yhj_tit">クーボン107期</h3>
+                        <div class="yhj_con clearfix">
+                            <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                            <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                        </div>
+                        <div class="yhj_con clearfix">
+                            <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                            <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap active">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+
+                            <p class="per8"><b>9</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yhj">
+                    <a class="yhj_wrap active">
+                        <div class="yhj_mid"></div>
+                        <div class="yhj_right">
+
+                            <p class="per8"><b>9</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="yhj_left">
+                            <h3 class="yhj_tit">クーボン107期</h3>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                            <div class="yhj_con clearfix">
+                                <div class="pull-left"><p>取引金額($)</p><span>0.01円</span></div>
+                                <div class="pull-right"><p>取引金額($)</p><span class="pull-right">0.01円</span></div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--news-->
+<div class="news">
+    <div class="container">
+        <div class="col-md-3 col-md-offset-1">
+            <h3 class="newsTitle">朝のニュース</h3>
+        </div>
+        <div class="col-md-1 icon">
+            <!-- Nav tabs -->
+            <div class="line hidden-sm hidden-xs"></div>
+            <ul class="nav nav-tabs" >
+                <li  class="active col-xs-3"><a href="#news1"  data-toggle="tab"><span class="glyphicon glyphicon-globe"></span></a></li>
+                <li class="col-xs-3"><a href="#news2"  data-toggle="tab"><span class="glyphicon glyphicon-trash"></span></a></li>
+                <li class="col-xs-3"><a href="#news3"  data-toggle="tab"><span class="glyphicon glyphicon-tower"></span></a></li>
+                <li class="col-xs-3"><a href="#news4"  data-toggle="tab"><span class="glyphicon glyphicon-qrcode"></span></a></li>
+            </ul>
+        </div>
+        <div class="col-md-7 newsCon">
+            <div class="tab-content">
+                <div  class="tab-pane active" id="news1">
+                    <ul>
+                        <li>2019-03-14【???】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【???】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【???】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【???】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【???】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【???】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【???】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【???】内容なし2019年03月14日ー2019年14月03日</li>
+                    </ul>
+                </div>
+                <div  class="tab-pane" id="news2">
+                    <ul>
+                        <li>2019-03-14【!!!】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【!!!】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【!!!】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【!!!】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【!!!】内容なし2019年03月14日ー2019年14月03日</li>
+
+                    </ul>
+                </div>
+                <div  class="tab-pane" id="news3">
+                    <ul>
+                    <li>2019-03-14【@@@】内容なし2019年03月14日ー2019年14月03日</li>
+                    <li>2019-03-14【@@@】内容なし2019年03月14日ー2019年14月03日</li>
+                    <li>2019-03-14【@@@】内容なし2019年03月14日ー2019年14月03日</li>
+
+                </ul></div>
+                <div  class="tab-pane" id="news4">
+                    <ul>
+                        <li>2019-03-14【§§§】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【§§§】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【§§§】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【§§§】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【§§§】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【§§§】内容なし2019年03月14日ー2019年14月03日</li>
+                        <li>2019-03-14【§§§】内容なし2019年03月14日ー2019年14月03日</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--footer-->
+<footer>
+    <div class="container text-center hidden-xs">
+        <h3>スポンサー</h3>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ul>
+    </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/iscroll.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootsrap/js/bootstrap.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/wjs_index.js"></script>
+</body>
+</html>
